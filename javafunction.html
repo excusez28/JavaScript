@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+     <style>
+        h1 {
+            color: rgb(5, 73, 51);
+            font-size: 50px;
+        }
+     </style>
+</head>
+<body>
+    <button onclick="myH(200,150)">execute the answer by clicking on it</button>
+    <i></i><h1 id="myP"></h1></i>
+    <h1 id="myH"></h1>
+    <script>
+    
+   document.getElementById("myP").innerHTML = "Its interesting!"
+        function myH(a,b){
+            document.getElementById("myH").innerHTML =a+b
+        }
+    </script>
+</body>
+</html>
