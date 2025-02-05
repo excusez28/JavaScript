@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methods</title>
+</head>
+<body>
+    <h1 id="hello2"></h1>
+    
+    <script>
+        document.getElementById("hello2").innerHTML = "Javascript Methods>>"
+        var hi = "Javascript methods";
+        document.write (hi.toUpperCase());
+        document.write("<br>");
+        document.write(hi.toLowerCase());
+        document.write("<br>");
+        document.write(hi.startsWith("J"));
+
+        //TEST METHOD
+         document.write("<br>");
+        var google = new RegExp("STR");
+        var output = google.test(hi);
+        document.write(output);
+        document.write("<br>");
+        document.write("<br>");
+        document.write("Loop>>");
+        for (i = 8; i < 21; i=i+2) {
+                document.write(i);
+                document.write("<br>");
+            }
+
+            var stationaries = ["Pen","Notebook","Highlighter","Calculator"]
+            for (i = 0; i < stationaries.length; i++) {
+                var text = stationaries[i] + "<br>"
+                document.write(text)
+            }
+    </script>
+</body>
+</html>
