@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+
+</head>
+<body>
+    <h1 id="Myp"></h1>
+    <h1><i id="MyHH"></i></h1>
+    <h1 id="myK"></h1>
+    <h1><i id="myM"></i></h1>
+    <h1 id="Myu"></h1>
+    <script>
+        document.getElementById("Myp").innerHTML="Array~"
+        var stationaries= [
+            "Notebook",
+            "Calculator",
+            "Highlighter",
+            "Sticky Notes"
+
+    ];
+    document.getElementById("MyHH").innerHTML = stationaries[3];
+    document.write (stationaries[2])
+
+    document.getElementById("myK").innerHTML = stationaries.join (" * ");
+
+         document.getElementById("Myu").innerHTML = stationaries; stationaries.pop();
+
+     document.getElementById("myM").innerHTML = stationaries;
+
+    </script>
+</body>
+</html>
