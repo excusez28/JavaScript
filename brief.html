@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brief</title>
+</head>
+<body>
+    <h1>Javascript Data types~</h1>
+    <!-- <script>
+        var a = 28;
+        var b = 67;
+        var c = 28;
+        var d = null;
+        var e; //undefined variable
+        document.write("Less than or gratter than  : " + (a<b) )
+        document.write("<br>")
+        document.write("b and c are equal  : " + (b == c))
+        document.write("<br>")
+        document.write("c and a are equal  : " + (c == a))
+        document.write("<br>")
+        document.write("The value of d is  : " + d )
+        document.write("<br>")
+        document.write("The value of e is  : " + e)
+        document.write("<br>")
+    </script> -->
+    <h1>Time based greeting~</h1>
+    <button onclick="myFunction()">make attempts</button>
+    <h1 id="greet"></h1>
+    <h1 id="hour"></h1>
+    <h1 id="h"></h1>
+    <h1 id="number"></h1>
+    <script>
+        function myFunction() {
+            var greeting;
+            var time = new Date().getHours();
+
+            if (time < 10) {
+                greeting = "Good Morning"
+            }
+            else if (time < 20) {
+                greeting = "Good Day"
+            }
+            else {
+                greeting = "Good evening"
+            }
+
+        
+
+            document.getElementById("hour").innerHTML = "Current hour is: " + time;
+            document.getElementById("greet").innerHTML = greeting;
+        }
+
+
+         document.getElementById("h").innerHTML = "Javascript while loop~";
+
+         var text = "";
+         var i = 0;
+         while (i < 10) {
+            text += "<br> The number is: " +i; 
+            i++;
+         }
+
+          document.getElementById("number").innerHTML = text;
+
+
+        
+
+
+    </script>
+
+
+</body>
+</html>
