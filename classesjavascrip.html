@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classes</title>
+</head>
+<body>
+    <h1 style="text-align: center; color: blue;" >~Student profile~</h1>
+    <h1 id="student1"></h1>
+    <h1 id="student2"></h1>
+    <script>
+        //creating a class
+        class student {
+            constructor(name, year) {
+                this.name = name;
+                this.year = year;
+            }
+        //creating age method for class student
+        age(){
+            let date = new Date();
+            return date.getFullYear() - this.year;
+            }
+        }
+
+        //use student class with two objects
+        student1 = new student("Maisa", 2011);
+        document.getElementById("student1").innerHTML = "My name is " + student1.name + ". I born in " + student1.year + " and my age is " + student1.age();
+    </script>
+</body>
+</html>
