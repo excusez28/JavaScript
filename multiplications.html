@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multiplications</title>
 </head>
+
 <body>
-    <h1>Multiplication table of <i style="color: rgb(17, 0, 255);">5 </i>from <i style="color: rgb(255, 115, 0);">1 to 100</i></h1>
+    <h1>Multiplication table of <i style="color: rgb(17, 0, 255);">5 </i>from <i style="color: rgb(255, 115, 0);">1 to
+            100</i></h1>
     <h1 id="number"></h1>
     <script>
-        var text = "";
-            var i = 5;
-            while (i < 101) {
-                text = 5 * i;
-                i=i+5;
-                document.write("<br>")
-            }
+        var text = " ";
+        var i = 1;
+        while (i < 101) {
+            text += "5 x " + i + " = " + (5 * i) + "<br>";
+            i = i + 1;
 
-            document.getElementById("number").innerHTML = text;
-           
+        }
+
+        document.getElementById("number").innerHTML = text;
+        ;
     </script>
 </body>
+
 </html>
