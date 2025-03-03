@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array & mapping system in javascript</title>
+</head>
+<body>
+    <h1>Javascript <i>Array Sort</i></h1>
+    <button onclick="ascending()">Ascending order</button>
+    <button onclick="descending()">descending order</button>
+    <button onclick="fruits()">Fruits</button>
+    <button onclick="Maths()">Math Equations</button>
+
+    <h1 id="result"></h1>
+    <h1 id="demo"></h1>
+    <h1 id="mathss"></h1>
+    <script>
+        var points = [67,44,28,56,11];
+        document.getElementById("result").innerHTML = points;
+        function ascending() {
+            points.sort(function(a,b){return a - b});
+            document.getElementById("result").innerHTML = points;
+        }
+         function descending() {
+                points.sort(function (a, b) { return b - a });
+                document.getElementById("result").innerHTML = points;
+            }
+         var fruits = ["Watermelon","Strawberry","Mango","Grapes"];
+         document.getElementById("demo").innerHTML = fruits.sort();
+
+            function Maths() {
+                var x = 28;
+                var y = 67;
+                var a = eval("y-x") + "<br>";
+                var b = eval("16 * 16") + "<br>";
+                var c = eval("x + y") + "<br>";
+
+                var res = a + b + c;
+                document.getElementById("mathss").innerHTML = res;
+            }
+         
+    </script>
+</body>
+</html>
