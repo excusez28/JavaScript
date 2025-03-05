@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String method js</title>
+</head>
+<body>
+    <h1>Javascript <i>String() Method~</i></h1>
+    <h2><i>This string() method can convert a number to string()</i></h2>
+    <h1 id="string" style="color: blue;"></h1>
+    <h1 id="number" style="color: green;"></h1>
+    <h1 id="result" style="color: rgb(255, 0, 98);"></h1>
+    <h1 id="demo"></h1>
+
+    <script>
+        var x = 240;
+        var y = 380;
+        document.getElementById("number").innerHTML = x+y;
+        document.getElementById("string").innerHTML = String(x) + String(y);
+
+        try {
+            var result = z-4;
+            document.write(result);
+            document.write("<br>");   
+        } catch (err) {
+            document.getElementById("result").innerHTML = "Error: " + err.message;
+        }
+       
+        document.write("Arrow function with parametar")
+        add = (a,b) => a+b;
+        document.getElementById("demo").innerHTML = add(5,7);
+
+       
+    </script>
+</body>
+</html>
