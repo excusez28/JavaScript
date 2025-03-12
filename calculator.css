@@ -1,0 +1,169 @@
+body {
+
+    font-family: 'Open Sans', sans-serif;
+
+    background-color: #f4f4f9;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    height: 100vh;
+
+    margin: 0;
+
+}
+
+/* Calculator container */
+
+.container {
+
+    background-color: #ffffff;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+    width: 320px;
+
+    text-align: center;
+
+}
+
+/* Title */
+
+h1 {
+
+    font-size: 24px;
+
+    color: #333;
+
+}
+
+/* Display screen */
+
+#result {
+
+    width: 100%;
+
+    padding: 15px;
+
+    font-size: 24px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    margin-bottom: 15px;
+
+    background-color: #f9f9f9;
+
+    text-align: right;
+
+    box-sizing: border-box;
+
+}
+
+/* Button container */
+
+.buttons {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 10px;
+
+}
+
+/* Buttons */
+
+button {
+
+    padding: 15px;
+
+    font-size: 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #e0e0e0;
+
+    color: #333;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s ease;
+
+}
+
+/* Hover and active effects */
+
+button:hover {
+
+    background-color: #d6d6d6;
+
+}
+
+button:active {
+
+    background-color: #ccc;
+
+}
+
+/* Operator buttons */
+
+button:nth-child(4n) {
+
+    background-color: #ff9f43;
+
+    color: #fff;
+
+}
+
+button:nth-child(4n):hover {
+
+    background-color: #ff7f0e;
+
+}
+
+/* Equal button */
+
+button:nth-last-child(1) {
+
+    background-color: #4caf50;
+
+    color: white;
+
+}
+
+button:nth-last-child(1):hover {
+
+    background-color: #45a049;
+
+}
+
+/* Clear button */
+
+#clear {
+
+    background-color: #f44336;
+
+    color: white;
+
+    width: 100%;
+
+    margin-top: 10px;
+
+}
+
+#clear:hover {
+
+    background-color: #d32f2f;
+
+}
