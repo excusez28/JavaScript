@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backgrund-color changer</title>
+
+    <style>
+        #Blue {
+            background-color: blue;
+        }
+        #Purple {
+            background-color: purple;
+        }
+        #Green {
+            background-color: Green;
+        }
+        #Pink {
+            background-color: Pink;
+        }
+    </style>
+</head>
+<body>
+    <h1><i>Press the button to change the background color~</i></h1>
+    <button onclick="Blue()">Blue</button>
+    <button onclick="Purple()">Purple</button>
+    <button onclick="Green()">Green</button>
+    <button onclick="Pink()">Pink</button>
+
+    <script>
+        function Blue() {
+            document.body.id = "Blue";
+        }
+        function Purple() {
+                document.body.id = "Purple";
+        }
+        function Green() {
+                document.body.id = "Green";
+        }
+        function Pink() {
+                document.body.id = "Pink";
+        }
+    </script>
+
+</body>
+</html>
