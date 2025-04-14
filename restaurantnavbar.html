@@ -46,6 +46,33 @@
         <a href="review.html">Review</a>
         
     </div>
+    <h2>Foods which are trending in our resturant now~</h2>
+    
+    <div class="carousel-container"></div>
+    <img class="myslides" src="https://th.bing.com/th/id/R.4186909b6f06c9256099ebc4600388e4?rik=Y%2fdjZ8aILN6Lew&pid=ImgRaw&r=0" height="400" width="800" alt="slide 1">
+    <img class="myslides" src="https://www.crazymasalafood.com/wp-content/images/20-best-pizza-places-in-hyderabad-you-ought-to-visit/frescos-pizza.jpg" height="400" width="800" alt="slide 2">
+    <img class="myslides" src="https://miro.medium.com/v2/resize:fit:612/1*SMK8v1yH5BAWjErt6ctO4g.jpeg" height="400" width="800" alt="slide 3">
+    <script>
+         var index = 0;
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("myslides");
+
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                index++;
+                if (index > x.length) {
+                    index = 1;
+                }
+
+                x[index - 1].style.display = "block";
+
+                setTimeout(carousel, 2000);
+            }
+            carousel();
+
+    </script>
 </body>
 
 </html>
